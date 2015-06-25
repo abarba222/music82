@@ -19,6 +19,17 @@ module.exports = function(environment) {
     }
   };
 
+  contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' connect.soundcloud.com  ",
+      'font-src': "'self'",
+      'connect-src': "'self' api.soundcloud.com",
+      'img-src': "'self'",
+      'style-src': "'self'",
+      'media-src': "'self'"
+    }
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

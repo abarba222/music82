@@ -19,6 +19,13 @@
 
     <script src="assets/vendor.js"></script>
     <script src="assets/music82.js"></script>
+    <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
+    <script>
+      SC.initialize({
+        client_id: "29f194d9cb00a607cc133aa9fa716089",
+        redirect_uri: "",
+      });
+    </script>
 
     {{content-for 'body-footer'}}
   </body>
